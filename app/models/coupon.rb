@@ -1,7 +1,7 @@
 class Coupon < ActiveRecord::Base
 
   def to_s
-    coupon_code+" "+store
+  "Code:"+coupon_code+"Store:"+store
 end
 
 end
