@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coupon Form/title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Coupon Form</h1>
+    <%=form_tag(coupons_path) do%>
+        <%=text_field_tag :'coupon[coupon_code]', placeholder: 'coupon code'%>
+        <%=text_field_tag :'coupon[store]', placeholder: 'store'%>
+
+        <%=submit_tag "Submit Coupon"%>
+        
+    <%end%>
+</body>
+</html>
